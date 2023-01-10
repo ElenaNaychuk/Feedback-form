@@ -26,3 +26,9 @@
         border: 2px solid burlywood;
     }
 }
+
+@media screen and (max-width: 599.98px) {
+    .container {
+        margin: 100px 20px;
+    }
+}

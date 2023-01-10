@@ -4,11 +4,14 @@ import style from './mainPage.module.scss';
 
 
 function MainPage() {
-    const [showedFeedbackForm, setShowedFeedbackForm] = useState(false)
+    const [showedFeedbackForm, setShowedFeedbackForm] = useState(false);
+    // const [submittedForm,  ]
 
     const showFeedbackForm = () => setShowedFeedbackForm(true);
 
-    const closeFeedbackForm = () => setShowedFeedbackForm(false)
+    const closeFeedbackForm = () => {
+        setShowedFeedbackForm(false)
+    }
 
     return (
         <div className={style.container}>
