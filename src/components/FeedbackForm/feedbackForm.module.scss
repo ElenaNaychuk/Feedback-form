@@ -9,39 +9,41 @@
     form {
         position: absolute;
         top: 20%;
-        left: 25%;
-        right: 25%;
+        left: 20%;
+        right: 20%;
         bottom: 20%;
         opacity: 1;
+        padding: 40px;
         background-color: #edf1f5;
         text-align: center;
-        padding: 30px;
 
         .form__input {
             width: 80%;
             display: block;
-            margin: 0 auto;
+            margin: 5px auto;
             padding: 10px;
         }
 
         .form__errorMessage {
             height: 24px;
+            padding: 5px;
             color: red;
+
             font-family: 'Inter';
             font-size: 14px;
             font-weight: 300;
-            padding: 5px;
         }
 
         .form__submitBtn {
             width: 80%;
             height: 40px;
+            margin-top: 20px;
             background-color: burlywood;
             border: none;
+
             font-family: 'Inter';
             font-size: 20px;
             font-weight: 500;
-            margin-top: 20px;
         }
 
         .form__submitBtn:hover {
@@ -57,11 +59,12 @@
         }
 
         .form__closeBtn {
-            border: none;
             display: block;
             width: 30px;
             height: 30px;
+            border: none;
             font-size: 30px;
+
             position: absolute;
             top: 10px;
             right: 15px;
@@ -76,14 +79,16 @@
     .form__info {
         position: absolute;
         top: 45%;
-        left: 20%;
-        right: 20%;
+        left: 15%;
+        right: 15%;
         bottom: 45%;
         opacity: 1;
+
+        padding: 30px;
         background-color: #574019;
         color: #fff;
         text-align: center;
-        padding: 30px;
+
         font-family: 'Inter';
         font-size: 22px;
         font-weight: 500;
@@ -93,18 +98,18 @@
 @media screen and (max-width: 599.98px) {
     .favDialog {
         form {
-            top: 20%;
+            top: 15%;
             left: 10%;
             right: 10%;
-            bottom: 20%;
-            padding: 40px 10px;
+            bottom: 15%;
+            padding: 20px 10px;
         }
 
         .form__info {
-            top: 40%;
+            top: 35%;
             left: 5%;
             right: 5%;
-            bottom: 40%;
+            bottom: 35%;
         }
     }
 }

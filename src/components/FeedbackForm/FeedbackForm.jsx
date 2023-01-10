@@ -27,7 +27,6 @@ function FeedbackForm({ closeFeedbackForm }) {
     }
 
     async function onSubmit() {
-        // e.preventDefault();
         setSentAttempt(true);
         sendDataToServer(inputValues);
     }
@@ -59,25 +58,25 @@ function FeedbackForm({ closeFeedbackForm }) {
     return (
         <section className={style.favDialog}>
             <form className={style.form} onSubmit={onSubmit}>
-                <h3 className={style.form__title}>{inputValues.title}</h3>
+                <h3 className={style.form__title}></h3>
                 <input
                     onChange={onNameChange}
                     onBlur={onBlur}
                     className={style.form__input}
+                    value={inputValues.userName}
                     type="text"
                     placeholder='Имя'
                     name='userName'
-                    value={inputValues.userName}
                 />
                 <p className={style.form__errorMessage}>{error('userName')}</p>
                 <input
                     onChange={onPhoneChange}
                     onBlur={onBlur}
                     className={style.form__input}
+                    value={inputValues.phone}
                     type="text"
                     placeholder='+7(999)999-99-99'
                     name="phone"
-                    value={inputValues.phone}
                     id="phone"
                 />
                 <p className={style.form__errorMessage}>{error('phone')}</p>
@@ -85,14 +84,14 @@ function FeedbackForm({ closeFeedbackForm }) {
                     onChange={onMessageChange}
                     onBlur={onBlur}
                     className={style.form__input}
+                    value={inputValues.message}
                     placeholder='Введите сообщение'
                     rows="5"
                     cols="33"
                     name='message'
-                    value={inputValues.message}
                 />
                 <p className={style.form__errorMessage}>{error('message')}</p>
-                <div className={style.form__text}>{inputValues.text}</div>
+                <div className={style.form__text}></div>
                 <button
                     onClick={onSubmit}
                     className={style.form__submitBtn}
