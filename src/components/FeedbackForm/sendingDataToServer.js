@@ -9,7 +9,6 @@ export async function sendDataToServer({ form }) {
             body: JSON.stringify(form)
         })
     } catch (error) {
-        console.log(error);
         alert('Произошла ошибка! Попробуйте ещё раз')
     }
 }
