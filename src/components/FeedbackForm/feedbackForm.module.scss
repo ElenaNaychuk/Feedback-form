@@ -1,0 +1,68 @@
+.favDialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cfbe90;
+
+    form {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        right: 25%;
+        bottom: 20%;
+        opacity: 1;
+        background-color: #edf1f5;
+        text-align: center;
+        padding: 10px;
+
+        .form__input {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .form__errorMessage {
+            height: 24px;
+            color: red;
+            font-family: 'Inter';
+            font-size: 14px;
+            font-weight: 300;
+            padding: 5px;
+        }
+
+        .form__submitBtn {
+            width: 80%;
+            height: 40px;
+            background-color: burlywood;
+            border: none;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+
+        .form__submitBtn:hover {
+            cursor: pointer;
+            background-color: #f3d9b8;
+            border: 2px solid burlywood;
+        }
+
+        .form__closeBtn {
+            border: none;
+            display: block;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+
+        .form__closeBtn:hover {
+            cursor: pointer;
+        }
+    }
+}
