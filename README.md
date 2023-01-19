@@ -1,6 +1,6 @@
 ## Feedback-form
 
-Implementing a feedback form using React.
+Implemented a feedback form using React.
 
 ### Installation and setup
 
